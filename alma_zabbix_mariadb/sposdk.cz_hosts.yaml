@@ -1,0 +1,17 @@
+zabbix_export:
+  version: "5.4"
+  date: "2024-12-19T12:00:00Z"
+  groups:
+    - name: "Web Monitoring"
+  hosts:
+    - host: "sposdk.cz"
+      name: "SPOSDK Web"
+      interfaces:
+        - type: "1"
+          main: "1"
+          useip: "1"
+          ip: "93.185.102.100"
+          dns: "sposdk.cz"
+          port: "10050"
+      templates:
+        - name: "Template App HTTPS Service"
